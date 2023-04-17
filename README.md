@@ -10,20 +10,35 @@ https://github.com/amrrashed/TEST-AUTOML-LIBRARY-IN-PYTHON
 
 #LINKS for youtube videos
 link for auto ML using python playlist
+
 https://youtube.com/playlist?list=PLAI6JViu7Xmd1urM6kbKuvMTARh-dZ6of
+
 auto keras example 
+
 https://youtu.be/dkROQQ4Fem0
+
 MLjar and H2O example
+
 https://youtu.be/f04P5cJZrtE
+
 TPOT EXAMPLE
+
 https://youtu.be/iYMJFNj8fxg
+
 LAZY PREDICT EXAMPLE
+
 https://youtu.be/PkROMlPD3xo
+
 link for ML projest playlist
+
 https://youtube.com/playlist?list=PLAI6JViu7XmcKQpCISPLATV7jkuYRhMsB
+
 classification learner
+
 https://youtu.be/txd1pVDgM3Y
+
 Link for Orange datamining playlist
+
 https://youtube.com/playlist?list=PLAI6JViu7XmfexiRhCF0R5eozmy5pypH3
 
 google colab link to test autoML techniques 
