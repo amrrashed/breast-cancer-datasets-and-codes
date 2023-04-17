@@ -1,0 +1,4 @@
+Ensemble accuracy 0.858696 trained in 2.57 seconds (1-sample predict time 0.1403 seconds)
+AutoML fit time: 456.5 seconds
+AutoML best model: Ensemble
+Test accuracy: 0.7083333333333334

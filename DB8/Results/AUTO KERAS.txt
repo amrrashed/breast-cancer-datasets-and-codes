@@ -1,0 +1,59 @@
+Best val_accuracy So Far: 0.8928571343421936
+Total elapsed time: 00h 06m 29s
+INFO:tensorflow:Oracle triggered exit
+3/3 [==============================] - 1s 8ms/step - loss: 0.6997 - accuracy: 0.5761
+INFO:tensorflow:Assets written to: ./structured_data_classifier/best_model/assets
+Accuracy: 0.708
+loss: 0.658
+1/1 [==============================] - 0s 11ms/step
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 9)]               0         
+                                                                 
+ multi_category_encoding (Mu  (None, 9)                0         
+ ltiCategoryEncoding)                                            
+                                                                 
+ normalization (Normalizatio  (None, 9)                19        
+ n)                                                              
+                                                                 
+ dense (Dense)               (None, 512)               5120      
+                                                                 
+ batch_normalization (BatchN  (None, 512)              2048      
+ ormalization)                                                   
+                                                                 
+ re_lu (ReLU)                (None, 512)               0         
+                                                                 
+ dropout (Dropout)           (None, 512)               0         
+                                                                 
+ dense_1 (Dense)             (None, 128)               65664     
+                                                                 
+ batch_normalization_1 (Batc  (None, 128)              512       
+ hNormalization)                                                 
+                                                                 
+ re_lu_1 (ReLU)              (None, 128)               0         
+                                                                 
+ dropout_1 (Dropout)         (None, 128)               0         
+                                                                 
+ dense_2 (Dense)             (None, 32)                4128      
+                                                                 
+ batch_normalization_2 (Batc  (None, 32)               128       
+ hNormalization)                                                 
+                                                                 
+ re_lu_2 (ReLU)              (None, 32)                0         
+                                                                 
+ dropout_2 (Dropout)         (None, 32)                0         
+                                                                 
+ dense_3 (Dense)             (None, 1)                 33        
+                                                                 
+ classification_head_1 (Acti  (None, 1)                0         
+ vation)                                                         
+                                                                 
+=================================================================
+Total params: 77,652
+Trainable params: 76,289
+Non-trainable params: 1,363
+_________________________________________________________________
+
+accuracy: 70.83%

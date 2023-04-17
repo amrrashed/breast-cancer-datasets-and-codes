@@ -1,0 +1,22 @@
+Generation 1 - Current best internal CV score: 0.7830409356725146
+
+Generation 2 - Current best internal CV score: 0.7929824561403509
+
+Generation 3 - Current best internal CV score: 0.7929824561403509
+
+Generation 4 - Current best internal CV score: 0.8035087719298245
+
+Generation 5 - Current best internal CV score: 0.804093567251462
+
+Generation 6 - Current best internal CV score: 0.8140350877192983
+
+Generation 7 - Current best internal CV score: 0.8251461988304094
+
+Generation 8 - Current best internal CV score: 0.8251461988304094
+
+Generation 9 - Current best internal CV score: 0.8251461988304094
+
+Generation 10 - Current best internal CV score: 0.8251461988304094
+
+Best pipeline: SGDClassifier(RFE(input_matrix, criterion=entropy, max_features=0.05, n_estimators=100, step=0.1), alpha=0.0, eta0=0.01, fit_intercept=True, l1_ratio=0.75, learning_rate=invscaling, loss=squared_hinge, penalty=elasticnet, power_t=0.1)
+0.5
