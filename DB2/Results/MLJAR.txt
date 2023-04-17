@@ -1,0 +1,6 @@
+* Step ensemble will try to check up to 1 model
+Ensemble accuracy 0.790909 trained in 4.22 seconds (1-sample predict time 0.0733 seconds)
+AutoML fit time: 993.26 seconds
+AutoML best model: 15_CatBoost_GoldenFeatures
+AutoML(eval_metric='accuracy', mode='Perform')
+Test accuracy: 0.75

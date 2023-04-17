@@ -1,0 +1,51 @@
+Model Details
+=============
+H2OXGBoostEstimator :  XGBoost
+Model Key:  XGBoost_grid_1_AutoML_4_20220321_185005_model_1
+
+
+Model Summary: 
+number_of_trees
+0		31.0
+
+
+ModelMetricsBinomial: xgboost
+** Reported on train data. **
+
+MSE: 0.1573258593369087
+RMSE: 0.3966432393687162
+LogLoss: 0.487403596441579
+Mean Per-Class Error: 0.2570621468926554
+AUC: 0.7861770244821092
+AUCPR: 0.6858625523345414
+Gini: 0.5723540489642185
+
+Confusion Matrix (Act/Pred) for max f1 @ threshold = 0.35902297496795654: 
+0	1	Error	Rate
+0	0	145.0	32.0	0.1808	(32.0/177.0)
+1	1	25.0	50.0	0.3333	(25.0/75.0)
+2	Total	170.0	82.0	0.2262	(57.0/252.0)
+
+Maximum Metrics: Maximum metrics at their respective thresholds
+metric	threshold	value	idx
+0	max f1	0.359023	0.636943	73.0
+1	max f2	0.099035	0.710173	171.0
+2	max f0point5	0.499041	0.668016	38.0
+3	max accuracy	0.499041	0.793651	38.0
+4	max precision	0.800033	1.000000	0.0
+5	max recall	0.076711	1.000000	180.0
+6	max specificity	0.800033	1.000000	0.0
+7	max absolute_mcc	0.438439	0.484177	61.0
+8	max min_per_class_accuracy	0.293072	0.717514	92.0
+9	max mean_per_class_accuracy	0.359023	0.742938	73.0
+10	max tns	0.800033	177.000000	0.0
+11	max fns	0.800033	74.000000	0.0
+12	max fps	0.049926	177.000000	185.0
+13	max tps	0.076711	75.000000	180.0
+14	max tnr	0.800033	1.000000	0.0
+15	max fnr	0.800033	0.986667	0.0
+16	max fpr	0.049926	1.000000	185.0
+17	max tpr	0.076711	1.000000	180.0
+
+ACC
+[[0.49904078245162964, 0.7936507936507936]]

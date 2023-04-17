@@ -1,0 +1,160 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>Orange Report</title>
+
+    <style>
+    html, body, table {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        margin:0px;
+        padding:0;
+        border:0 none;
+    }
+
+    h1, h2 , h3, h4, h5 {
+       padding: 1px;
+       font-size:100%;
+    }
+
+    h1 {
+        color: white;
+        background-color: black;
+        padding: 4px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    h2 {
+        border-bottom: 1px solid black;
+        padding-left: 2px;
+    }
+
+    ul, table, p {
+        padding: 10px;
+    }
+
+    table {
+        margin-left: -6px;
+    }
+
+    span.timestamp {
+        position: absolute;
+        right: 40px;
+        color:#ddd;
+    }
+
+    div.selected, div.normal {
+        margin: 5px;
+    }
+
+    div.selected {
+        background: #ddd;
+    }
+    @media print{
+        div.selected {
+            background: inherit;
+        }
+        ::-webkit-input-placeholder {
+            color: transparent;
+        }
+    }
+
+    div.content {
+        margin-left: 15px;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 2px 6px 2px 6px;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    @media screen {
+        td, th {
+            white-space: nowrap;
+        }
+    }
+
+    .caption {
+        text-align: center;
+        font-size: 90%;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-height: 20cm;
+    }
+
+    span.legend-square {
+        width: 1em;
+        height: 1em;
+        margin-right: 6px;
+        display: inline-block;
+    }
+
+    span.legend-item {
+        margin-right: 24px;
+    }
+
+    textarea {
+        border: 1px solid silver;
+        font-style: italic;
+        width: 100%;
+        height: 4em;
+    }
+
+    .textwrapper {
+        padding: 15px;
+    }
+
+    div.normal textarea:invalid {
+        display: none;
+    }
+
+    div.selected textarea {
+        display: block;
+    }
+
+    @media print{
+        section.section, img {
+            page-break-inside: avoid;
+        }
+    }
+    </style>
+    <script>
+    function scrollToId(id) {
+        var sel_el = document.getElementById(id);
+        if (sel_el != undefined) {
+            sel_el.scrollIntoView();
+            return true;
+        }
+        return false;
+    };
+
+    function setSelectedId(id) {
+        var sel_el = document.getElementsByClassName('selected')[0];
+        if (sel_el != undefined && sel_el.id != id) {
+           sel_el.className = 'normal';
+        }
+        sel_el = document.getElementById(id);
+        if (sel_el != undefined) {
+            sel_el.className = 'selected';
+            return true;
+        }
+        return false;
+    };
+    </script>
+
+</head><body onload="(function (id) {     setSelectedId(id); scrollToId(id); }(&quot;2859114706832&quot;));">
+
+ 
+
+<div id="2859114706832" class="selected" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Test and Score <span class="timestamp">Mon Mar 28 22, 17:35:27</span></h1><div class="content">
+<h2>Settings</h2><ul><b>Sampling type:</b> Shuffle split, 5 random samples with 80% data <br><b>Target class:</b> Average over classes<br></ul><h2>Scores</h2><table>
+<tbody><tr><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Model</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Train time [s]</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Test time [s]</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">AUC</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">CA</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">F1</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Precision</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Recall</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">LogLoss</th><th style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Specificity</th></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">kNN</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.320</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.197</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6955530918945554</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7607142857142857</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7203667093730645</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7568680250957749</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7607142857142857</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">2.1225455962270643</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.4793694787597227</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">V-SVM</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.633</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.183</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6988482384823849</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7607142857142857</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7177101696032653</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7602722116460267</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7607142857142857</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.5516137955307515</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.47222486185900825</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">SVM</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.807</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.199</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6805863513180586</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7535714285714286</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6900461071827666</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7853995590631689</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7535714285714286</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.5485084636291582</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.419254390595854</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Naive Bayes</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.049</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.025</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7417467356491747</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7464285714285714</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7429779384371537</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7405180023228805</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7464285714285714</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.5856943544308044</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6163455108577061</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Random Forest</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.601</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.146</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6866531165311652</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7285714285714285</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7095925162517835</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7071358336845062</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7285714285714285</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.9159404348088275</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.5160701087530355</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Neural Network</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">51.864</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.206</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.69740083764474</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7285714285714285</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7038078200868899</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7042333743842365</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7285714285714285</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6402932842516931</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.49463625805089223</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Logistic Regression</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.292</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.112</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.70590046809559</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7285714285714285</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6897899707470994</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7011904761904763</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7285714285714285</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.5462478175745322</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.4517685566466054</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">RIDGEL2</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.376</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.118</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.712121212121212</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7214285714285714</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6788510185061909</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6897007583521214</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.7214285714285714</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.5541844538963874</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.4345211698870236</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">AdaBoost</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">1.497</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.239</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6694690810544469</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6857142857142857</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6748285039547176</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.668430634785775</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6857142857142857</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.5951201245421803</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.49832119100411787</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">SGD</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.455</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.172</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.5461936437546193</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6714285714285714</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6438847756604765</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.633664596273292</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6714285714285714</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">11.348455101184939</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.4209587160806673</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">Tree</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">1.310</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.003</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.5881374722838137</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.65</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6378771975859355</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6297224582271312</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.65</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">8.352393266723245</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.44780734170978076</td></tr><tr><td style="color:black;border:0;background:transparent;text-align:left;vertical-align:middle;">CN2 rule inducer</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">26.432</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.042</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.5818551367331855</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6357142857142857</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6249337979094078</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.617040589820834</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6357142857142857</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.6827130671367249</td><td style="color:black;border:0;background:transparent;text-align:right;vertical-align:middle;">0.4347464188927604</td></tr></tbody></table></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div></body></html>
