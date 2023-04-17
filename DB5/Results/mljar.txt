@@ -1,0 +1,5 @@
+Ensemble accuracy 1.0 trained in 3.42 seconds (1-sample predict time 0.0301 seconds)
+AutoML fit time: 784.11 seconds
+AutoML best model: 4_Default_CatBoost
+AutoML(eval_metric='accuracy', mode='Perform')
+Test accuracy: 0.6

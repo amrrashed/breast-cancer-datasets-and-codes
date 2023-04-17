@@ -1,0 +1,22 @@
+Generation 1 - Current best internal CV score: 0.9
+
+Generation 2 - Current best internal CV score: 0.9
+
+Generation 3 - Current best internal CV score: 0.9
+
+Generation 4 - Current best internal CV score: 0.9
+
+Generation 5 - Current best internal CV score: 0.9
+
+Generation 6 - Current best internal CV score: 0.9
+
+Generation 7 - Current best internal CV score: 0.9
+
+Generation 8 - Current best internal CV score: 0.9
+
+Generation 9 - Current best internal CV score: 0.9
+
+Generation 10 - Current best internal CV score: 0.9
+
+Best pipeline: DecisionTreeClassifier(input_matrix, criterion=entropy, max_depth=2, min_samples_leaf=3, min_samples_split=2)
+0.6
