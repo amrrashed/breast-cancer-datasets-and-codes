@@ -1,0 +1,43 @@
+ModelMetricsBinomialGLM: glm
+** Reported on train data. **
+
+MSE: 0.022108916201697356
+RMSE: 0.14869067288063956
+LogLoss: 0.08259750096137912
+Null degrees of freedom: 535
+Residual degrees of freedom: 525
+Null deviance: 696.9870409069699
+Residual deviance: 88.54452103059842
+AIC: 110.54452103059842
+AUC: 0.9964633404320049
+AUCPR: 0.9932898159626876
+Gini: 0.9929266808640098
+
+Confusion Matrix (Act/Pred) for max f1 @ threshold = 0.21713595748352574: 
+2	4	Error	Rate
+0	2	334.0	12.0	0.0347	(12.0/346.0)
+1	4	1.0	189.0	0.0053	(1.0/190.0)
+2	Total	335.0	201.0	0.0243	(13.0/536.0)
+
+Maximum Metrics: Maximum metrics at their respective thresholds
+metric	threshold	value	idx
+0	max f1	0.217136	0.966752	170.0
+1	max f2	0.217136	0.983351	170.0
+2	max f0point5	0.585291	0.964819	156.0
+3	max accuracy	0.228143	0.975746	168.0
+4	max precision	0.999982	1.000000	0.0
+5	max recall	0.081894	1.000000	182.0
+6	max specificity	0.999982	1.000000	0.0
+7	max absolute_mcc	0.217136	0.948616	170.0
+8	max min_per_class_accuracy	0.367151	0.973684	163.0
+9	max mean_per_class_accuracy	0.217136	0.980027	170.0
+10	max tns	0.999982	346.000000	0.0
+11	max fns	0.999982	185.000000	0.0
+12	max fps	0.004619	346.000000	399.0
+13	max tps	0.081894	190.000000	182.0
+14	max tnr	0.999982	1.000000	0.0
+15	max fnr	0.999982	0.973684	0.0
+16	max fpr	0.004619	1.000000	399.0
+17	max tpr	0.081894	1.000000	182.0
+ACC
+[[0.22814307381739152, 0.9757462686567164]]

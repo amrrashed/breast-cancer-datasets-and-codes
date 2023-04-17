@@ -1,0 +1,21 @@
+Generation 1 - Current best internal CV score: 0.9755754475703324
+
+Generation 2 - Current best internal CV score: 0.9755754475703324
+
+Generation 3 - Current best internal CV score: 0.9760585393577718
+
+Generation 4 - Current best internal CV score: 0.9765558397271951
+
+Generation 5 - Current best internal CV score: 0.9765558397271951
+
+Generation 6 - Current best internal CV score: 0.9765558397271951
+
+Generation 7 - Current best internal CV score: 0.9765558397271951
+
+Generation 8 - Current best internal CV score: 0.9765558397271951
+
+Generation 9 - Current best internal CV score: 0.977529127593066
+
+Generation 10 - Current best internal CV score: 0.977529127593066
+
+Best pipeline: ExtraTreesClassifier(Normalizer(MaxAbsScaler(SelectFwe(input_matrix, alpha=0.046)), norm=l1), bootstrap=False, criterion=entropy, max_features=0.4, min_samples_leaf=6, min_samples_split=4, n_estimators=100)
