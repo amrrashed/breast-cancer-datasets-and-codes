@@ -1,0 +1,22 @@
+Generation 1 - Current best internal CV score: 0.8599339257233994
+
+Generation 2 - Current best internal CV score: 0.8599339257233994
+
+Generation 3 - Current best internal CV score: 0.8629414445203919
+
+Generation 4 - Current best internal CV score: 0.8629414445203919
+
+Generation 5 - Current best internal CV score: 0.8659603554340396
+
+Generation 6 - Current best internal CV score: 0.8659603554340396
+
+Generation 7 - Current best internal CV score: 0.8659603554340396
+
+Generation 8 - Current best internal CV score: 0.8659603554340396
+
+Generation 9 - Current best internal CV score: 0.8659603554340396
+
+Generation 10 - Current best internal CV score: 0.8659603554340396
+
+Best pipeline: RandomForestClassifier(PolynomialFeatures(MinMaxScaler(input_matrix), degree=2, include_bias=False, interaction_only=False), bootstrap=True, criterion=entropy, max_features=0.45, min_samples_leaf=17, min_samples_split=11, n_estimators=100)
+0.8012048192771084

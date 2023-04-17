@@ -1,0 +1,53 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 5)]               0         
+                                                                 
+ multi_category_encoding (Mu  (None, 5)                0         
+ ltiCategoryEncoding)                                            
+                                                                 
+ normalization (Normalizatio  (None, 5)                11        
+ n)                                                              
+                                                                 
+ dense (Dense)               (None, 128)               768       
+                                                                 
+ batch_normalization (BatchN  (None, 128)              512       
+ ormalization)                                                   
+                                                                 
+ re_lu (ReLU)                (None, 128)               0         
+                                                                 
+ dropout (Dropout)           (None, 128)               0         
+                                                                 
+ dense_1 (Dense)             (None, 64)                8256      
+                                                                 
+ batch_normalization_1 (Batc  (None, 64)               256       
+ hNormalization)                                                 
+                                                                 
+ re_lu_1 (ReLU)              (None, 64)                0         
+                                                                 
+ dropout_1 (Dropout)         (None, 64)                0         
+                                                                 
+ dense_2 (Dense)             (None, 32)                2080      
+                                                                 
+ batch_normalization_2 (Batc  (None, 32)               128       
+ hNormalization)                                                 
+                                                                 
+ re_lu_2 (ReLU)              (None, 32)                0         
+                                                                 
+ dropout_2 (Dropout)         (None, 32)                0         
+                                                                 
+ dense_3 (Dense)             (None, 1)                 33        
+                                                                 
+ classification_head_1 (Acti  (None, 1)                0         
+ vation)                                                         
+                                                                 
+=================================================================
+Total params: 12,044
+Trainable params: 11,585
+Non-trainable params: 459
+_________________________________________________________________
+
+accuracy: 75.30%
+INFO:tensorflow:Assets written to: breast_cancer_model.tf\assets
+You must install pydot (`pip install pydot`) and install graphviz (see instructions at https://graphviz.gitlab.io/download/) for plot_model/model_to_dot to work.

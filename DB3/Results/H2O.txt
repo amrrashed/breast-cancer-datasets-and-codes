@@ -1,0 +1,43 @@
+ModelMetricsBinomialGLM: stackedensemble
+** Reported on test data. **
+
+MSE: 0.15748235134921004
+RMSE: 0.39684046082677865
+LogLoss: 0.5127126904197751
+Null degrees of freedom: 175
+Residual degrees of freedom: 172
+Null deviance: 245.1931767480769
+Residual deviance: 180.47486702776078
+AIC: 188.47486702776078
+AUC: 0.8590191511387163
+AUCPR: 0.8501185331019498
+Gini: 0.7180383022774326
+
+Confusion Matrix (Act/Pred) for max f1 @ threshold = 0.13421785321421723: 
+0	1	Error	Rate
+0	0	56.0	28.0	0.3333	(28.0/84.0)
+1	1	6.0	86.0	0.0652	(6.0/92.0)
+2	Total	62.0	114.0	0.1932	(34.0/176.0)
+
+Maximum Metrics: Maximum metrics at their respective thresholds
+metric	threshold	value	idx
+0	max f1	0.134218	0.834951	99.0
+1	max f2	0.134218	0.892116	99.0
+2	max f0point5	0.744174	0.833333	64.0
+3	max accuracy	0.134218	0.806818	99.0
+4	max precision	0.996365	1.000000	0.0
+5	max recall	0.005692	1.000000	148.0
+6	max specificity	0.996365	1.000000	0.0
+7	max absolute_mcc	0.134218	0.628904	99.0
+8	max min_per_class_accuracy	0.451840	0.793478	77.0
+9	max mean_per_class_accuracy	0.576690	0.803054	70.0
+10	max tns	0.996365	84.000000	0.0
+11	max fns	0.996365	91.000000	0.0
+12	max fps	0.008444	84.000000	147.0
+13	max tps	0.005692	92.000000	148.0
+14	max tnr	0.996365	1.000000	0.0
+15	max fnr	0.996365	0.989130	0.0
+16	max fpr	0.008444	1.000000	147.0
+17	max tpr	0.005692	1.000000	148.0
+ACC
+[[0.49904078245162964, 0.7936507936507936]]
