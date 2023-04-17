@@ -1,0 +1,5 @@
+Ensemble logloss 0.077823 trained in 10.66 seconds (1-sample predict time 0.3525 seconds)
+AutoML fit time: 1626.03 seconds
+AutoML best model: Ensemble
+AutoML(mode='Perform')
+Test accuracy: 0.9912280701754386

@@ -1,0 +1,52 @@
+Model Details
+=============
+H2OGeneralizedLinearEstimator :  Generalized Linear Modeling
+Model Key:  GLM_1_AutoML_1_20220321_152754
+
+
+GLM Model: summary
+family	link	regularization	lambda_search	number_of_predictors_total	number_of_active_predictors	number_of_iterations	training_frame
+0		binomial	logit	Ridge ( lambda = 0.005248 )	nlambda = 30, lambda.max = 38.202, lambda.min = 0.005248, lambda.1...	31	31	58	AutoML_1_20220321_152754_training_py_5_sid_b915
+
+
+ModelMetricsBinomialGLM: glm
+** Reported on train data. **
+
+MSE: 0.015944831464351737
+RMSE: 0.12627284531660693
+LogLoss: 0.06540044841416845
+Null degrees of freedom: 449
+Residual degrees of freedom: 418
+Null deviance: 594.6353393993376
+Residual deviance: 58.86040357275161
+AIC: 122.86040357275161
+AUC: 0.9971715636609254
+AUCPR: 0.9963210459856495
+Gini: 0.9943431273218508
+
+Confusion Matrix (Act/Pred) for max f1 @ threshold = 0.41470241461022955: 
+B	M	Error	Rate
+0	B	280.0	2.0	0.0071	(2.0/282.0)
+1	M	4.0	164.0	0.0238	(4.0/168.0)
+2	Total	284.0	166.0	0.0133	(6.0/450.0)
+
+Maximum Metrics: Maximum metrics at their respective thresholds
+metric	threshold	value	idx
+0	max f1	4.147024e-01	0.982036	123.0
+1	max f2	4.147024e-01	0.978520	123.0
+2	max f0point5	5.725890e-01	0.992647	119.0
+3	max accuracy	5.725890e-01	0.986667	119.0
+4	max precision	9.999998e-01	1.000000	0.0
+5	max recall	2.059730e-02	1.000000	206.0
+6	max specificity	9.999998e-01	1.000000	0.0
+7	max absolute_mcc	5.725890e-01	0.971698	119.0
+8	max min_per_class_accuracy	4.147024e-01	0.976190	123.0
+9	max mean_per_class_accuracy	4.147024e-01	0.984549	123.0
+10	max tns	9.999998e-01	282.000000	0.0
+11	max fns	9.999998e-01	143.000000	0.0
+12	max fps	7.723554e-08	282.000000	399.0
+13	max tps	2.059730e-02	168.000000	206.0
+14	max tnr	9.999998e-01	1.000000	0.0
+15	max fnr	9.999998e-01	0.851190	0.0
+16	max fpr	7.723554e-08	1.000000	399.0
+17	max tpr	2.059730e-02	1.000000	206.0
