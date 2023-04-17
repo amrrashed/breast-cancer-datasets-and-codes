@@ -1,0 +1,33 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 5)]               0         
+                                                                 
+ multi_category_encoding (Mu  (None, 5)                0         
+ ltiCategoryEncoding)                                            
+                                                                 
+ normalization (Normalizatio  (None, 5)                11        
+ n)                                                              
+                                                                 
+ dense (Dense)               (None, 16)                96        
+                                                                 
+ batch_normalization (BatchN  (None, 16)               64        
+ ormalization)                                                   
+                                                                 
+ re_lu (ReLU)                (None, 16)                0         
+                                                                 
+ dropout (Dropout)           (None, 16)                0         
+                                                                 
+ dense_1 (Dense)             (None, 1)                 17        
+                                                                 
+ classification_head_1 (Acti  (None, 1)                0         
+ vation)                                                         
+                                                                 
+=================================================================
+Total params: 188
+Trainable params: 145
+Non-trainable params: 43
+_________________________________________________________________
+
+accuracy: 57.89%

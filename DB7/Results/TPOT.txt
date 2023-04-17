@@ -1,0 +1,21 @@
+Generation 1 - Current best internal CV score: 0.9016762753642868
+
+Generation 2 - Current best internal CV score: 0.9029169701533689
+
+Generation 3 - Current best internal CV score: 0.9030000946467003
+
+Generation 4 - Current best internal CV score: 0.9034967840697257
+
+Generation 5 - Current best internal CV score: 0.9038290762893554
+
+Generation 6 - Current best internal CV score: 0.9038290762893554
+
+Generation 7 - Current best internal CV score: 0.9038290762893554
+
+Generation 8 - Current best internal CV score: 0.9039119950289904
+
+Generation 9 - Current best internal CV score: 0.9039119950289904
+
+Generation 10 - Current best internal CV score: 0.9049055796287379
+
+Best pipeline: DecisionTreeClassifier(OneHotEncoder(SelectPercentile(input_matrix, percentile=85), minimum_fraction=0.25, sparse=False, threshold=10), criterion=entropy, max_depth=7, min_samples_leaf=15, min_samples_split=5)

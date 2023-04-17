@@ -1,0 +1,50 @@
+Model Details
+=============
+H2OStackedEnsembleEstimator :  Stacked Ensemble
+Model Key:  StackedEnsemble_BestOfFamily_4_AutoML_1_20220323_204722
+
+No model summary for this model
+
+ModelMetricsBinomialGLM: stackedensemble
+** Reported on train data. **
+
+MSE: 0.07285955003412826
+RMSE: 0.26992508226196443
+LogLoss: 0.25185989450835
+Null degrees of freedom: 3226
+Residual degrees of freedom: 3222
+Null deviance: 2765.862584706485
+Residual deviance: 1625.5037591568907
+AIC: 1635.5037591568907
+AUC: 0.9007749530443527
+AUCPR: 0.7307127178956635
+Gini: 0.8015499060887055
+
+Confusion Matrix (Act/Pred) for max f1 @ threshold = 0.3533280008625987: 
+Alive	Dead	Error	Rate
+0	Alive	2603.0	129.0	0.0472	(129.0/2732.0)
+1	Dead	188.0	307.0	0.3798	(188.0/495.0)
+2	Total	2791.0	436.0	0.0982	(317.0/3227.0)
+
+Maximum Metrics: Maximum metrics at their respective thresholds
+metric	threshold	value	idx
+0	max f1	0.353328	0.659506	170.0
+1	max f2	0.140997	0.696906	261.0
+2	max f0point5	0.562034	0.736935	112.0
+3	max accuracy	0.533645	0.909204	119.0
+4	max precision	0.947070	1.000000	0.0
+5	max recall	0.013940	1.000000	387.0
+6	max specificity	0.947070	1.000000	0.0
+7	max absolute_mcc	0.509621	0.611595	125.0
+8	max min_per_class_accuracy	0.138350	0.810761	263.0
+9	max mean_per_class_accuracy	0.150256	0.814341	255.0
+10	max tns	0.947070	2732.000000	0.0
+11	max fns	0.947070	494.000000	0.0
+12	max fps	0.004029	2732.000000	399.0
+13	max tps	0.013940	495.000000	387.0
+14	max tnr	0.947070	1.000000	0.0
+15	max fnr	0.947070	0.997980	0.0
+16	max fpr	0.004029	1.000000	399.0
+17	max tpr	0.013940	1.000000	387.0
+ACC
+[[0.5336454723943034, 0.9092035946699721]]

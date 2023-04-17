@@ -1,0 +1,22 @@
+Generation 1 - Current best internal CV score: 0.9027626710972442
+
+Generation 2 - Current best internal CV score: 0.9027626710972442
+
+Generation 3 - Current best internal CV score: 0.9027626710972442
+
+Generation 4 - Current best internal CV score: 0.9030741960723704
+
+Generation 5 - Current best internal CV score: 0.904006839059919
+
+Generation 6 - Current best internal CV score: 0.904006839059919
+
+Generation 7 - Current best internal CV score: 0.904006839059919
+
+Generation 8 - Current best internal CV score: 0.904006839059919
+
+Generation 9 - Current best internal CV score: 0.904006839059919
+
+Generation 10 - Current best internal CV score: 0.904006839059919
+
+Best pipeline: XGBClassifier(input_matrix, learning_rate=0.1, max_depth=2, min_child_weight=3, n_estimators=100, n_jobs=1, subsample=0.7500000000000001, verbosity=0)
+0.9118012422360249
