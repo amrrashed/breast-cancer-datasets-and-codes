@@ -1,0 +1,23 @@
+Generation 1 - Current best internal CV score: 0.8175403225806452
+
+Generation 2 - Current best internal CV score: 0.8175403225806452
+
+Generation 3 - Current best internal CV score: 0.8175403225806452
+
+Generation 4 - Current best internal CV score: 0.8175403225806452
+
+Generation 5 - Current best internal CV score: 0.8175403225806452
+
+Generation 6 - Current best internal CV score: 0.8175403225806452
+
+Generation 7 - Current best internal CV score: 0.8300403225806452
+
+Generation 8 - Current best internal CV score: 0.8300403225806452
+
+Generation 9 - Current best internal CV score: 0.8300403225806452
+
+Generation 10 - Current best internal CV score: 0.8300403225806452
+
+Best pipeline: GradientBoostingClassifier(input_matrix, learning_rate=0.5, max_depth=6, max_features=0.9500000000000001, min_samples_leaf=10, min_samples_split=10, n_estimators=100, subsample=0.7000000000000001)
+Imputing missing values in feature set
+0.775

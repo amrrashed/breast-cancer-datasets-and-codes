@@ -1,0 +1,41 @@
+ModelMetricsBinomialGLM: glm
+** Reported on test data. **
+
+MSE: 0.17871645697056837
+RMSE: 0.42274869245281926
+LogLoss: 0.557665735744441
+Null degrees of freedom: 42
+Residual degrees of freedom: 8
+Null deviance: 46.65101658743689
+Residual deviance: 47.959253274021926
+AIC: 117.95925327402193
+AUC: 0.7606060606060606
+AUCPR: 0.4548113792949553
+Gini: 0.5212121212121212
+
+Confusion Matrix (Act/Pred) for max f1 @ threshold = 0.5811606805632191: 
+N	R	Error	Rate
+0	N	29.0	4.0	0.1212	(4.0/33.0)
+1	R	5.0	5.0	0.5	(5.0/10.0)
+2	Total	34.0	9.0	0.2093	(9.0/43.0)
+
+Maximum Metrics: Maximum metrics at their respective thresholds
+metric	threshold	value	idx
+0	max f1	0.581161	0.526316	8.0
+1	max f2	0.033751	0.735294	27.0
+2	max f0point5	0.736966	0.588235	5.0
+3	max accuracy	0.812006	0.813953	3.0
+4	max precision	0.812006	0.750000	3.0
+5	max recall	0.033751	1.000000	27.0
+6	max specificity	0.943650	0.969697	0.0
+7	max absolute_mcc	0.736966	0.413794	5.0
+8	max min_per_class_accuracy	0.152669	0.636364	18.0
+9	max mean_per_class_accuracy	0.033751	0.727273	27.0
+10	max tns	0.943650	32.000000	0.0
+11	max fns	0.943650	10.000000	0.0
+12	max fps	0.000080	33.000000	42.0
+13	max tps	0.033751	10.000000	27.0
+14	max tnr	0.943650	0.969697	0.0
+15	max fnr	0.943650	1.000000	0.0
+16	max fpr	0.000080	1.000000	42.0
+17	max tpr	0.033751	1.000000	27.0
